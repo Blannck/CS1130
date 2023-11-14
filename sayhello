@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+    <body>
+        <h1>This page says hello</h1>
+        <h2>This page says hello</h2>
+        <h3>This page says hello</h3>
+        <h4>This page says hello</h4>
+        <h5>This page says hello</h5>
+        <h6>This page says hello</h6>
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprent</p>
+                    <label for="fname">What is your name?</label><br>
+                        <input type="text" id="fname" name="fname">
+                                <button onclick="sayhellotouser()">Say Hello</button>
+                                    <br>
+                                        <h1 id="hellomsg">Hi</h1>
+                                            <br>
+                                                <a href="index.html">Back to Home</a>
+
+<script>
+function sayhellotouser()
+{
+    var uname;
+        uname=document.getElementById("fname").value;
+        document.getElementById("fname").value=' ';
+        
+    document.getElementById("hellomsg").innerHTML = 'Hello ' + uname + '!';
+    
+}
+</script>
+                    
+</body>
+</html>
