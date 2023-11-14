@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<h1>Add two numbers</h1>
+
+<p>
+    <label for="n1">First Number</label><br>
+        <input id="n1" name="n1" type="number"><br><br>
+    <label for="n2">Second Number</label><br>
+        <input id="n2" name="n2" type="number"><br><br>
+            <button onclick="computesum()"> Compute Sum </button>
+</p>
+<p>
+    <label for="sum" id="sumlabel">The sum is:</label><br>
+        <input id="sum" name="sum" type="number" readonly></input>
+</p>
+
+<script>
+function computesum()
+{
+  var x,y; 
+    x = document.getElementById("n1").value*1;  
+    y = document.getElementById("n2").value*1;
+
+             console.log(x);
+             console.logYes;
+
+  let z  = x+y;
+    document.getElementById("sumlabel").innerHTML='The sum of '
+
+        +x+' and '+y+' is:';
+
+    document.getElementById("sum").value=z;
+}
+</script>
+</html>
